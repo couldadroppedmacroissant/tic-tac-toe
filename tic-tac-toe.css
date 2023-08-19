@@ -1,0 +1,99 @@
+body, html {
+    height: 100%;
+    width: 100%;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'consolas', monospace;
+}
+.container {
+    height: 100vh;
+    width: 100vw;
+    background: #DDE6ED;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.head h3 {
+    font-size: 2em;
+    color: #27374D;
+}
+.innerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.row {
+    display: flex;
+    align-items: center;
+}
+.cell {
+    background: #27374D;
+    /* background: rgb(0, 0, 100); */
+    /* background: rgb(255, 255, 0); */
+    height: 2em;
+    width: 2em;
+    margin: .3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 3em;
+    overflow: hidden;
+    transition: .4s;
+}
+.cell:hover {
+    cursor: pointer;
+    box-shadow: 4px 4px 15px 10px rgb(0, 0, 0, 0.1);
+}
+.finalCardWrapper {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    display: none;
+}
+.finalWrapper {
+    height: 275px;
+    width: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 15px;
+}
+.finalWrapper p {
+    font-size: 1.8em;
+    text-align: center;
+}
+.restart {
+    color: white;
+    background: #27374D;
+    text-transform: uppercase;
+    border-radius: 20px;
+    font-size: 1em;
+    padding: .5em 1.2em;
+    border: white 1.5px solid;
+    margin: 1em 0;
+    font-weight: 800;
+    transition: .4s;
+}
+.restart:hover {
+    color: #27374D;
+    background: #fff;
+    cursor: pointer;
+    border: #27374D solid 1.5px;
+}
+.win, .lose, .tie {
+    display: none;
+}

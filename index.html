@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tic-tac-toe.css">
+</head>
+<body>
+    <div class="finalCardWrapper">
+        <div class="finalWrapper win">
+            <p>Congratulations! You won!</p>
+            <button class="restart">Start a new game</button>
+        </div>
+        <div class="finalWrapper lose">
+            <p>Uh.. looks like you lost. <br> Maybe next time.</p>
+            <button class="restart">Start a new game</button>
+        </div> 
+        <div class="finalWrapper tie">
+            <p>Too bad.. it's a tie.</p>
+            <button class="restart">Start a new game</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="head">
+            <h3>TIC TAC TOE</h3>
+            <div class="result"></div>
+        </div>
+        <div class="innerContainer">
+            <div class="row row1">
+                <div class="cell cell1"></div>
+                <div class="cell cell2"></div>
+                <div class="cell cell3"></div>
+            </div>
+            <div class="row row2">
+                <div class="cell cell4"></div>
+                <div class="cell cell5"></div>
+                <div class="cell cell6"></div>
+            </div>
+            <div class="row row3">
+                <div class="cell cell7"></div>
+                <div class="cell cell8"></div>
+                <div class="cell cell9"></div>
+            </div>
+        </div>
+    </div>
+    <script src="tic-tac-toe.js"></script>
+</body>
+</html>
